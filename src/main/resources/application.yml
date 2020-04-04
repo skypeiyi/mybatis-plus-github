@@ -1,0 +1,15 @@
+# datasource config
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@172.20.107.196:1521:basa_app
+    username: basa_app
+    password: password
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+# mybatis config
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.cpy.demo.model
+  global-config:
+    db-config:
+      id-type: auto
